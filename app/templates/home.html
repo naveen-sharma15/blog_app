@@ -1,0 +1,18 @@
+{% include 'navbar.html' %}
+
+<div class="container">
+  <h1>Latest Blog Posts</h1><br>
+
+  {% for p in posts %}
+  <div class="post-card">
+    <h2>{{ p[1] }}</h2>
+    <p>{{ p[2] }}</p>
+    <a href="/edit/{{ p[0] }}" class="btn">Edit</a>
+    <a href="/delete/{{ p[0] }}" class="btn">Delete</a>
+  </div>
+  {% endfor %}
+</div>
+
+</body>
+</html>
+

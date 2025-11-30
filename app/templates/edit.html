@@ -1,0 +1,12 @@
+
+{% include 'navbar.html' %}
+<div class="container">
+  <h2>Edit Blog</h2>
+  <form method="post">
+    <label>Title</label>
+    <input name="title" value="{{post[1]}}">
+    <label>Content</label>
+    <textarea name="content" rows="5">{{post[2]}}</textarea>
+    <button class="btn">Update</button>
+  </form>
+</div>
